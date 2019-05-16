@@ -1,0 +1,6 @@
+framework module logio {
+  umbrella header "logio-umbrella.h"
+
+  export *
+  module * { export * }
+}

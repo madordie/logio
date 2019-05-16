@@ -1,0 +1,32 @@
+PODS:
+  - CocoaAsyncSocket (7.6.3)
+  - CocoaLumberjack (3.5.3):
+    - CocoaLumberjack/Core (= 3.5.3)
+  - CocoaLumberjack/Core (3.5.3)
+  - CocoaLumberjack/Swift (3.5.3):
+    - CocoaLumberjack/Core
+  - logio (0.1.0):
+    - CocoaAsyncSocket
+    - CocoaLumberjack
+
+DEPENDENCIES:
+  - CocoaLumberjack/Swift
+  - logio (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CocoaAsyncSocket
+    - CocoaLumberjack
+
+EXTERNAL SOURCES:
+  logio:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
+  logio: 756c315ed2b8ef848d4a59f9599f4b915c328f82
+
+PODFILE CHECKSUM: bc5c394d47eb1dab6b759ea4a6a419f0ee62a40a
+
+COCOAPODS: 1.7.0.rc.1

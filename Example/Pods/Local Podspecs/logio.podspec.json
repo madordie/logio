@@ -1,0 +1,31 @@
+{
+  "name": "logio",
+  "version": "0.1.0",
+  "summary": "A short description of logio.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/madordie/logio",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "madordie": "e.madordie@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/madordie/logio.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "logio/Classes/**/*",
+  "swift_versions": "4.2",
+  "dependencies": {
+    "CocoaAsyncSocket": [
+
+    ],
+    "CocoaLumberjack": [
+
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+framework module Pods_logio_Example {
+  umbrella header "Pods-logio_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
