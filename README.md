@@ -2,9 +2,9 @@
 
 A [log.io](http://logio.org/) logger for [CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumberjack).
 
-![screenshot.gif](https://github.com/madordie/logio/blob/master/Images/screenshot.gif?raw=true)
+[English Document](https://madordie.github.io/post/logio-brief/) | [中文文档](https://madordie.github.io/post/logio-brief-zh-cn/)
 
-[Doc](https://madordie.github.io/post/logio-brief/)
+![screenshot.gif](https://github.com/madordie/logio/blob/master/Images/screenshot.gif?raw=true)
 
 ## Example
 
