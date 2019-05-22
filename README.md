@@ -26,6 +26,7 @@ pod 'logio', :git => 'https://github.com/madordie/logio.git'
 Assume that the server IP is `10.12.12.10`
 
 ```swift
+// swift
 DDLog.add(LogIO.shared)
 LogIO.shared.content(host: "10.12.12.10", port: 28777)
 ```
@@ -33,6 +34,7 @@ LogIO.shared.content(host: "10.12.12.10", port: 28777)
 or
 
 ```oc
+// oc
 [DDLog addLogger: LogIO.shared];
 [LogIO.shared contentHost:@"10.12.12.10" port:28777];
 ```
