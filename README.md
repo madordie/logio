@@ -49,6 +49,7 @@ madordie, e.madordie@gmail.com
 - [LogIO-CocoaLumberjack](https://github.com/s4nchez/LogIO-CocoaLumberjack)
 - [logio.org](http://logio.org/)
 - [blacklabelops-legacy/logio](https://github.com/blacklabelops-legacy/logio)
+- [CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket)
 
 ## License
 
