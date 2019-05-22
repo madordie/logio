@@ -1,9 +1,10 @@
-# logio
+# logio for iOS
 
-[![CI Status](https://img.shields.io/travis/madordie/logio.svg?style=flat)](https://travis-ci.org/madordie/logio)
-[![Version](https://img.shields.io/cocoapods/v/logio.svg?style=flat)](https://cocoapods.org/pods/logio)
-[![License](https://img.shields.io/cocoapods/l/logio.svg?style=flat)](https://cocoapods.org/pods/logio)
-[![Platform](https://img.shields.io/cocoapods/p/logio.svg?style=flat)](https://cocoapods.org/pods/logio)
+A [log.io](http://logio.org/) logger for [CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumberjack).
+
+![screenshot.gif](https://github.com/madordie/logio/blob/master/Images/screenshot.gif?raw=true)
+
+[Doc](https://madordie.github.io/post/logio-brief/)
 
 ## Example
 
@@ -17,12 +18,35 @@ logio is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'logio'
+pod 'logio', :git => 'https://github.com/madordie/logio.git'
+```
+
+## Usage
+
+Assume that the server IP is `10.12.12.10`
+
+```swift
+DDLog.add(LogIO.shared)
+LogIO.shared.content(host: "10.12.12.10", port: 28777)
+```
+
+or
+
+```oc
+[DDLog addLogger: LogIO.shared];
+[LogIO.shared contentHost:@"10.12.12.10" port:28777];
 ```
 
 ## Author
 
 madordie, e.madordie@gmail.com
+
+## Thx
+
+- [CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumberjack)
+- [LogIO-CocoaLumberjack](https://github.com/s4nchez/LogIO-CocoaLumberjack)
+- [logio.org](http://logio.org/)
+- [blacklabelops-legacy/logio](https://github.com/blacklabelops-legacy/logio)
 
 ## License
 
