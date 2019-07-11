@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LogIO: DDAbstractLogger
 
+@property (nonatomic, copy, readonly) NSString *node;
 @property (class, readonly, strong) LogIO *shared;
 
 /**

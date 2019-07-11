@@ -9,7 +9,7 @@
 #import <CocoaAsyncSocket/GCDAsyncSocket.h>
 
 #define kREGIST @"+node|%@|%@\r\n"
-#define kFORMAT @"+log|%@|%@|%ld|%@\r\n"
+#define kFORMAT @"+log|%@|%@|%@|%@\r\n"
 
 @interface LogIO () <GCDAsyncSocketDelegate> {
     GCDAsyncSocket *_socket;
@@ -29,10 +29,11 @@
     });
     return shared;
 }
+- (NSString *)node { return _node; }
 - (NSError *)contentHost:(NSString *)host port:(NSUInteger)port {
     NSString *node = [NSUserDefaults.standardUserDefaults stringForKey:@"logio.node"];
     if (node == nil || node.length == 0) {
-        node = [NSString stringWithFormat:@"0x%lX", @(NSDate.date.timeIntervalSince1970 * 1000).integerValue];
+        node = [NSString stringWithFormat:@"0x%lX", (long)@(NSDate.date.timeIntervalSince1970 * 1000).integerValue];
         [NSUserDefaults.standardUserDefaults setObject:node forKey:@"logio.node"];
     }
 
@@ -56,7 +57,7 @@
     NSString *log = _logFormatter ? [_logFormatter formatLogMessage:logMessage] : logMessage.message;
     if (log == nil) { return; }
 
-    [self sendMsg:[NSString stringWithFormat:kFORMAT, _stream, _node, logMessage.level, log]];
+    [self sendMsg:[NSString stringWithFormat:kFORMAT, _stream, _node, @(logMessage.level), log]];
 }
 
 - (void)sendMsg:(NSString *)msg {

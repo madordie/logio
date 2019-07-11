@@ -17,16 +17,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		32B0750122D74E9C0060DFB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74611BF22D4B0C47DD24C5BC15E91685 /* CocoaAsyncSocket */;
+			proxyType = 2;
+			remoteGlobalIDString = B524DEC6AD09C399FF8EC2DBF4C4C76F;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		32B0750322D74E9C0060DFB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF7AEC9454968428A9A50B6A0C057B7D /* CocoaLumberjack */;
+			proxyType = 2;
+			remoteGlobalIDString = E6978C225930FAD19DA94D5CE2F2F1E6;
+			remoteInfo = CocoaLumberjack;
+		};
 		591D6D6D591A4B3AC36DBB539A35543C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 74611BF22D4B0C47DD24C5BC15E91685 /* CocoaAsyncSocket.xcodeproj */;
+			containerPortal = 74611BF22D4B0C47DD24C5BC15E91685 /* CocoaAsyncSocket */;
 			proxyType = 1;
 			remoteGlobalIDString = 028565F879BDCF0F420E4AB07AAF9426;
 			remoteInfo = CocoaAsyncSocket;
 		};
 		72A5A61E521AEB5410C45B216F26A89D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EF7AEC9454968428A9A50B6A0C057B7D /* CocoaLumberjack.xcodeproj */;
+			containerPortal = EF7AEC9454968428A9A50B6A0C057B7D /* CocoaLumberjack */;
 			proxyType = 1;
 			remoteGlobalIDString = 85392ABCB5967FC7F189FA544F4E883D;
 			remoteInfo = CocoaLumberjack;
@@ -34,7 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0294FBD79303D4249EA9D8D1A5A08EA7 /* LogIO.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LogIO.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0294FBD79303D4249EA9D8D1A5A08EA7 /* LogIO.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LogIO.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		19AAE63735C93266051B3AEA29D10F78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		245429085B29AC36A36469F7C882731A /* LogIO-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LogIO-dummy.m"; sourceTree = "<group>"; };
 		2E2B8E9F134DB255B702855CE36FD309 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,10 +58,10 @@
 		74611BF22D4B0C47DD24C5BC15E91685 /* CocoaAsyncSocket */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaAsyncSocket; path = CocoaAsyncSocket.xcodeproj; sourceTree = "<group>"; };
 		76AB39712700C22CCABBD794CF391929 /* LogIO-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LogIO-umbrella.h"; sourceTree = "<group>"; };
 		85C080C01C57C22E2A0AB7574B2D15B7 /* LogIO.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LogIO.xcconfig; sourceTree = "<group>"; };
-		883BC386A69C8AC6E28861064AABE40C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		883BC386A69C8AC6E28861064AABE40C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C6FF09726CBED2C6C42E68E30B3A39B2 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C802C981BF4DDEA2BE8961F5E1B9753D /* LogIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LogIO.framework; path = LogIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D521C6B873D36105C4A193B75A8CD8F3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C802C981BF4DDEA2BE8961F5E1B9753D /* LogIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LogIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D521C6B873D36105C4A193B75A8CD8F3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E61F5DADE44E5716A2BBF22AC9D35DAC /* LogIO.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LogIO.modulemap; sourceTree = "<group>"; };
 		EF7AEC9454968428A9A50B6A0C057B7D /* CocoaLumberjack */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaLumberjack; path = CocoaLumberjack.xcodeproj; sourceTree = "<group>"; };
 		FD8C9962C3188EC544CD68621F744114 /* LogIO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LogIO.h; path = logio/Classes/LogIO.h; sourceTree = "<group>"; };
@@ -67,6 +81,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32B074FD22D741F10060DFB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32B0750422D74E9C0060DFB8 /* CocoaLumberjack.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32B074FF22D741F10060DFB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32B0750222D74E9C0060DFB8 /* CocoaAsyncSocket.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3824A6E80437DAD0E41BB981BE6D67ED /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,15 +228,18 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 9AF3B7DF7266CD5614601F029D5B626D;
 			productRefGroup = E90C8E8D347A46CCCBDA0F484ECC6713 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 32B074FF22D741F10060DFB8 /* Products */;
 					ProjectRef = 74611BF22D4B0C47DD24C5BC15E91685 /* CocoaAsyncSocket */;
 				},
 				{
+					ProductGroup = 32B074FD22D741F10060DFB8 /* Products */;
 					ProjectRef = EF7AEC9454968428A9A50B6A0C057B7D /* CocoaLumberjack */;
 				},
 			);
@@ -216,6 +249,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		32B0750222D74E9C0060DFB8 /* CocoaAsyncSocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaAsyncSocket.framework;
+			remoteRef = 32B0750122D74E9C0060DFB8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		32B0750422D74E9C0060DFB8 /* CocoaLumberjack.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaLumberjack.framework;
+			remoteRef = 32B0750322D74E9C0060DFB8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4B76F9594768EDB0FA7DE9A2728A3759 /* Resources */ = {
@@ -306,8 +356,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
