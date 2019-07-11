@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface PodsDummy_logio : NSObject
+@interface PodsDummy_LogIO : NSObject
 @end
-@implementation PodsDummy_logio
+@implementation PodsDummy_LogIO
 @end

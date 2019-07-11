@@ -1,5 +1,5 @@
-framework module logio {
-  umbrella header "logio-umbrella.h"
+framework module LogIO {
+  umbrella header "LogIO-umbrella.h"
 
   export *
   module * { export * }

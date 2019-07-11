@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import logio
+import LogIO
 import CocoaLumberjack
 
 class ViewController: UIViewController {

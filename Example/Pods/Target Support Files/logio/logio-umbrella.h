@@ -12,6 +12,6 @@
 
 #import "LogIO.h"
 
-FOUNDATION_EXPORT double logioVersionNumber;
-FOUNDATION_EXPORT const unsigned char logioVersionString[];
+FOUNDATION_EXPORT double LogIOVersionNumber;
+FOUNDATION_EXPORT const unsigned char LogIOVersionString[];
 

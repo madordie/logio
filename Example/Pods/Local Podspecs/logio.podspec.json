@@ -1,5 +1,5 @@
 {
-  "name": "logio",
+  "name": "LogIO",
   "version": "0.1.0",
   "summary": "A short description of logio.",
   "description": "TODO: Add long description of the pod here.",
@@ -19,7 +19,6 @@
     "ios": "8.0"
   },
   "source_files": "logio/Classes/**/*",
-  "swift_versions": "4.2",
   "dependencies": {
     "CocoaAsyncSocket": [
 

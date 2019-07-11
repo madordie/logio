@@ -19,6 +19,15 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param host server host
  @param port server port
+ @param node server node name
+ @return [GCDAsyncSocket connectToHost:onPort:error:] -> error
+ */
+- (NSError *)contentHost:(NSString *)host port:(NSUInteger)port node:(NSString*)node NS_SWIFT_NAME(content(host:port:node:));
+/**
+ Content to LogIO server.
+
+ @param host server host
+ @param port server port
  @return [GCDAsyncSocket connectToHost:onPort:error:] -> error
  */
 - (NSError *)contentHost:(NSString *)host port:(NSUInteger)port NS_SWIFT_NAME(content(host:port:));

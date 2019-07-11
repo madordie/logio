@@ -1,5 +1,5 @@
 import XCTest
-import logio
+import LogIO
 
 class Tests: XCTestCase {
     

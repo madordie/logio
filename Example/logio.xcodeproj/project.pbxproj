@@ -46,7 +46,7 @@
 		BFBA1C9F0DD2AA92C3E98FF3 /* Pods-logio_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-logio_Tests.release.xcconfig"; path = "Target Support Files/Pods-logio_Tests/Pods-logio_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C29602BEDC9BA6736949E34F /* Pods-logio_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-logio_Tests.debug.xcconfig"; path = "Target Support Files/Pods-logio_Tests/Pods-logio_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E1743C2D87C53E0544C63900 /* Pods-logio_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-logio_Example.debug.xcconfig"; path = "Target Support Files/Pods-logio_Example/Pods-logio_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FE1DD910E3DA697CAF211689 /* logio.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = logio.podspec; path = ../logio.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FE1DD910E3DA697CAF211689 /* LogIO.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LogIO.podspec; path = ../LogIO.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +141,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				FE1DD910E3DA697CAF211689 /* logio.podspec */,
+				FE1DD910E3DA697CAF211689 /* LogIO.podspec */,
 				99AFB63F069D28A4A39717FD /* README.md */,
 				9DC81B87B48DCBF50AF2891C /* LICENSE */,
 			);
@@ -228,6 +228,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -272,13 +273,13 @@
 				"${PODS_ROOT}/Target Support Files/Pods-logio_Example/Pods-logio_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
-				"${BUILT_PRODUCTS_DIR}/logio/logio.framework",
+				"${BUILT_PRODUCTS_DIR}/LogIO/LogIO.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/logio.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LogIO.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

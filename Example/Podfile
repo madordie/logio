@@ -1,8 +1,9 @@
 use_frameworks!
+install! 'cocoapods', :generate_multiple_pod_projects => true
 
 target 'logio_Example' do
   pod 'CocoaLumberjack/Swift'
-  pod 'logio', :path => '../'
+  pod 'LogIO', :path => '../'
 #  pod 'LogIO-CocoaLumberjack', :path => '../LogIO-CocoaLumberjack/'
 
   target 'logio_Tests' do

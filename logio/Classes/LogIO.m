@@ -29,15 +29,23 @@
     });
     return shared;
 }
-
 - (NSError *)contentHost:(NSString *)host port:(NSUInteger)port {
+    NSString *node = [NSUserDefaults.standardUserDefaults stringForKey:@"logio.node"];
+    if (node == nil || node.length == 0) {
+        node = [NSString stringWithFormat:@"0x%lX", @(NSDate.date.timeIntervalSince1970 * 1000).integerValue];
+        [NSUserDefaults.standardUserDefaults setObject:node forKey:@"logio.node"];
+    }
+
+    return [self contentHost:host port:port node:node];
+}
+- (NSError *)contentHost:(NSString *)host port:(NSUInteger)port node:(NSString*)node {
     _socket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
     NSError *err;
     [_socket connectToHost:host onPort:port error:&err];
     if (err == nil) {
         _msgTag = 0;
-        _node = UIDevice.currentDevice.name;
-        _stream = NSBundle.mainBundle.infoDictionary[@"CFBundleName"];
+        _node = node ?: UIDevice.currentDevice.name;
+        _stream = NSBundle.mainBundle.infoDictionary[@"CFBundleDisplayName"] ?: NSBundle.mainBundle.infoDictionary[@"CFBundleName"];
         [self sendMsg:[NSString stringWithFormat:kREGIST, _node, _stream]];
     }
     return err;

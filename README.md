@@ -18,7 +18,7 @@ logio is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'logio', :git => 'https://github.com/madordie/logio.git'
+pod 'LogIO', :git => 'https://github.com/madordie/logio.git'
 ```
 
 ## Usage
