@@ -29,15 +29,18 @@
     });
     return shared;
 }
-- (NSString *)node { return _node; }
-- (NSError *)contentHost:(NSString *)host port:(NSUInteger)port {
+- (NSString *)node {
+    if (_node != nil) { return _node; }
     NSString *node = [NSUserDefaults.standardUserDefaults stringForKey:@"logio.node"];
     if (node == nil || node.length == 0) {
         node = [NSString stringWithFormat:@"0x%lX", (long)@(NSDate.date.timeIntervalSince1970 * 1000).integerValue];
         [NSUserDefaults.standardUserDefaults setObject:node forKey:@"logio.node"];
     }
-
-    return [self contentHost:host port:port node:node];
+    _node = node;
+    return _node;
+}
+- (NSError *)contentHost:(NSString *)host port:(NSUInteger)port {
+    return [self contentHost:host port:port node:self.node];
 }
 - (NSError *)contentHost:(NSString *)host port:(NSUInteger)port node:(NSString*)node {
     _socket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
