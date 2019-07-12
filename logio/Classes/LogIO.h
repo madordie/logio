@@ -33,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (NSError *)contentHost:(NSString *)host port:(NSUInteger)port NS_SWIFT_NAME(content(host:port:));
 
+- (void)close;
+
 @end
 
 NS_ASSUME_NONNULL_END

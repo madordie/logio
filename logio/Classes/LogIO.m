@@ -39,6 +39,9 @@
     _node = node;
     return _node;
 }
+- (void)close {
+    [_socket disconnectAfterWriting];
+}
 - (NSError *)contentHost:(NSString *)host port:(NSUInteger)port {
     return [self contentHost:host port:port node:self.node];
 }
