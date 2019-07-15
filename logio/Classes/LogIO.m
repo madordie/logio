@@ -42,6 +42,8 @@
 - (void)close {
     [_socket disconnectAfterWriting];
 }
+- (BOOL)isDisconnected { return _socket == nil || _socket.isDisconnected; }
+- (BOOL)isConnected { return _socket.isConnected; }
 - (NSError *)contentHost:(NSString *)host port:(NSUInteger)port {
     return [self contentHost:host port:port node:self.node];
 }

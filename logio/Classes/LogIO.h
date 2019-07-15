@@ -12,6 +12,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LogIO: DDAbstractLogger
 
+/**
+ * Returns whether the socket is disconnected or connected.
+ *
+ * A disconnected socket may be recycled.
+ * That is, it can be used again for connecting or listening.
+ *
+ * If a socket is in the process of connecting, it may be neither disconnected nor connected.
+ **/
+@property (atomic, readonly) BOOL isDisconnected;
+@property (atomic, readonly) BOOL isConnected;
+
 @property (nonatomic, copy, readonly) NSString *node;
 @property (class, readonly, strong) LogIO *shared;
 
